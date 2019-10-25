@@ -4,13 +4,14 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
   font-family: 'Archivo';
   height: auto;
   margin: 0;
+  padding: 0;
 }
 :root {
   --contrast-color: /*rgb(34, 115, 190)*/ #5085E6;
