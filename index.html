@@ -8,96 +8,6 @@
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		<link rel="stylesheet" type="text/css" href="MAVcss.css">
 		<link rel="icon" href="logo.png">
-		<script>
-			var kosten = [[],[]];
-
-			kosten[1][1] = "25";
-			kosten[1][2] = "30";
-			kosten[1][3] = "40";
-			kosten[1][5] = "60";
-			kosten[1][7] = "75";
-			kosten[1][14] = "130";
-
-			kosten[2][1] = "25";
-			kosten[2][2] = "40";
-			kosten[2][3] = "60";
-			kosten[2][5] = "85";
-			kosten[2][7] = "115";
-			kosten[2][14] = "190";
-
-			kosten[3][1] = "25";
-			kosten[3][2] = "40";
-			kosten[3][3] = "60";
-			kosten[3][5] = "85";
-			kosten[3][7] = "115";
-			kosten[3][14] = "190";
-
-			kosten[4][1] = "45";
-			kosten[4][2] = "65";
-			kosten[4][3] = "85";
-			kosten[4][5] = "115";
-			kosten[4][7] = "160";
-			kosten[4][14] = "245";
-
-			kosten[5][1] = "55";
-			kosten[5][2] = "80";
-			kosten[5][3] = "100";
-			kosten[5][5] = "150";
-			kosten[5][7] = "200";
-			kosten[5][14] = "300";
-
-			kosten[6][1] = "60";
-			kosten[6][2] = "90";
-			kosten[6][3] = "120";
-			kosten[6][5] = "180";
-			kosten[6][7] = "240";
-			kosten[6][14] = "340";
-			
-			function berechnePreis(anzMr, tage){
-
-				tage = document.getElementById("iTage").value;
-				anzMr = document.getElementById("iMotor").value;
-
-				var ergebnis = 0;
-				
-				if(tage == 3 || tage == 4){
-					ergebnis = kosten[anzMr][3];
-				} else if(tage < 7 && tage > 4){
-					ergebnis = kosten[anzMr][5];
-				} else if(tage < 14 && tage > 6){
-					ergebnis = kosten[anzMr][7];
-				} else if(tage >= 14){
-					ergebnis = kosten[anzMr][14];
-				}
-
-				if(tage > 7){
-					if(anzMr > 1 && anzMr < 4){
-						ergebnis = ergebnis + ((tage - 8) * 10);
-					} else if(anzMr == 4){
-						ergebnis = ergebnis + ((tage - 8) * 12.50);
-					} else if(anzMr > 4 && anzMr < 7){
-						ergebnis = ergebnis + ((tage - 8) * 15);
-					}
-				}
-				
-				document.getElementById("rPreis").innerHTML = ergebnis;
-				
-			}
-			function berechneKaution(anzZ){
-			
-				return (anzZ * 30) + 150;
-			}
-			class mv { 
-				constructor(minMR, maxMR) {
-				this.minMR = minMR;
-				this.maxMR = maxMR;
-				}
-			}
-			function fahrradTraegerOption(){
-				x = document.getElementById("kTraeger");
-				x.innerHTML("<select>   <option value="volvo">Volvo</option> <option value="saab">Saab</option> </select> ");
-			}
-		</script>
 	</head>
 	<body>
 		<div id="header" class="weiss">
@@ -1128,20 +1038,20 @@
 		</div>
 		<div id="preise" class="weiß">
 			<div id="rechner" class="blau">
-				<p>Kostenvoransicht</p>
+				<p id="kTitle">Kostenvoransicht</p>
 				<div id="kDiv">
 					<img class="kImg" src="bilder/MV 16.jpg">
 					<div id="kFormDiv">
 						<table>
 							<tr>
 								<td>
-									<label for="kAnzMtr">
+									<label class="kLabel" for="kAnzMtr">
 										Anzahl der Motorräder
 									</label>
 									<input id="kAnzMtr" type="range">
 								</td>
 								<td>
-									<label for="kAnzTage">
+									<label class="kLabel" for="kAnzTage">
 										Anzahl der Motorräder
 									</label>
 									<input id="kAnzTage" type="number">
@@ -1183,7 +1093,7 @@
 							<tr>
 								<td colspan="2">
 									<div id="kAnhangerWahlDiv">
-										<label for="kAnhangerWahl">gewünschter Anhänger</label>
+										<label class="kLabel" for="kAnhangerWahl">gewünschter Anhänger</label>
 										<select id="kAnhangerWahl">
 											<option value="mv16">MV16 absenkbar</option>
 											<option value="mv26">MV26 absenkbar</option>
@@ -1202,7 +1112,7 @@
 							<tr>
 								<td colspan="2">
 									<p>vorraussichtl. Preis:</p>
-									<href>Bitte beachten sie unsere Mietbedingungen und Konditionen!</href>
+									<a href="">Bitte beachten sie unsere Mietbedingungen und Konditionen!</a>
 								</td>
 							</tr>
 						</table>
@@ -1291,7 +1201,7 @@
 				</div>
 				<div id="footerLinks">
 					<a class="footerLink" href="">Mietbedingungen</a>
-					<a style="margin: auto;" class="footerLink" href="">Datenschutz</a>
+					<a class="footerLink" href="">Datenschutz</a>
 					<a class="footerLink" href="">Impressum</a>	
 				</div>		
 			</div>
