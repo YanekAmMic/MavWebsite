@@ -2,12 +2,14 @@
 <html>
 	<html lange="de">
 	<head>
-		<title> Motorrad Anhänger Verleih Bielefeld </title>
-		<meta name ="Yanek Wilken" content= "Yanekk">
+		<title>Motorrad Anhänger Verleih Bielefeld</title>
+		<meta name="author" content="Yanek Wilken">
 		<meta charset ="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		<link rel="stylesheet" type="text/css" href="MAVcss.css">
-		<link rel="icon" href="logo.png">
+		<link rel="icon" href="bilder/icon.png">
+		<script type="text/javascript" src="MAVjs.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id="header" class="weiss">
@@ -21,7 +23,6 @@
 			</div>
 		</div>
 		<div id="welcome" class="blau">
-			<img id="Logo" src="bilder/Logo.png">
 			<h2><span id="h2Wel">Willkommen bei MAV-Bielefeld!</span>
 				<br>
 				<br>
@@ -30,6 +31,7 @@
 				<br>
 				Wir bieten Ihnen verschiedene Anhänger passend für Ihre Bedürfnisse zum Vermieten an. 
 			</h2>
+			<img id="Logo" src="bilder/Logo.png">
 		</div>
 		<div id="angebot" class="weiß">
 			<h3>Unser Angebot</h3>
@@ -1039,85 +1041,136 @@
 		<div id="preise" class="weiß">
 			<div id="rechner" class="blau">
 				<p id="kTitle">Kostenvoransicht</p>
-				<div id="kDiv">
-					<img class="kImg" src="bilder/MV 16.jpg">
-					<div id="kFormDiv">
-						<table>
-							<tr>
-								<td>
-									<label class="kLabel" for="kAnzMtr">
-										Anzahl der Motorräder
-									</label>
-									<input id="kAnzMtr" type="range">
-								</td>
-								<td>
-									<label class="kLabel" for="kAnzTage">
-										Anzahl der Motorräder
-									</label>
-									<input id="kAnzTage" type="number">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<p>Zubehör</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="checkbox" id="kStaubox">
-									<label for="kStaubox">Staubox</label>
-								</td>
-								<td>
-									<input type="checkbox" id="kLenkradgurt">
-									<label for="kLenkradgurt">Lenkradgurt</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="checkbox" id="kHinterradbefestigung">
-									<label for="kHinterradbefestigung">Hinterradbefestigung</label>
-								</td>
-								<td>
-									<input type="checkbox" onselect="fahrradTraegerOption" id="kFahrradträger">
-									<label for="kFahrradträger">Fahrradträger</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="checkbox" id="kTransportversicherung">
-									<label for="kTransportversicherung">Transportversicherung</label>
-								</td>
-								<td id="kTraeger">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<div id="kAnhangerWahlDiv">
-										<label class="kLabel" for="kAnhangerWahl">gewünschter Anhänger</label>
-										<select id="kAnhangerWahl">
-											<option value="mv16">MV16 absenkbar</option>
-											<option value="mv26">MV26 absenkbar</option>
-											<option value="mv40">MV40</option>
-											<option value="mv41">MV41</option>
-											<option value="mv42">MV42</option>
-											<option value="mv62">MV62</option>
-											<option value="mv63">MV63</option>
-											<option value="mv64">MV64</option>
-											<option value="mv65">MV65</option>
-											<option value="mv68">MV68</option>
-										</select>
+				<img id="kImage" class="kImg" src="bilder/MV 16.jpg">
+				<form class="kFormDiv" autocomplete="off">
+					<table style="width: 100%; text-align: center;">
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="margin-top: 1em; width: 80%; border-radius: 2em; overflow: hidden;">
+									<select class="kAuswahl" id="kAnhangerWahl" onchange="setAnhanger()" style="width: 100%; padding: 0.4em 0.5em;">
+										<option value="default" selected>Anhänger</option>
+										<option value="mv16">MV16 absenkbar</option>
+										<option value="mv26">MV26 absenkbar</option>
+										<option value="mv40">MV40</option>
+										<option value="mv41">MV41</option>
+										<option value="mv42">MV42</option>
+										<option value="mv62">MV62</option>
+										<option value="mv63">MV63</option>
+										<option value="mv64">MV64</option>
+										<option value="mv65">MV65</option>
+										<option value="mv68">MV68</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="width: 80%;">
+									<label class="kLabel kAuswahl" for="kAnzMtr" style="position: absolute; right: 8.5em; transform: translate(0, 25%);">Anzahl der Motorräder</label>
+									<div class="kCostumNumberInputDiv">
+										<input class="kCostumNumberButton" type="button" value="-" onclick="buttonFunction(false, kAnzMtr)">
+										<input class="kCostumNumberInput" value="1" min="1" max="6" id="kAnzMtr" type="number" onchange="berechneKosten()">
+										<input class="kCostumNumberButton" type="button" value="+" onclick="buttonFunction(true, kAnzMtr)" style="left: 80%;">
 									</div>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<p>vorraussichtl. Preis:</p>
-									<a href="">Bitte beachten sie unsere Mietbedingungen und Konditionen!</a>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="width: 80%;">
+									<label class="kLabel kAuswahl" for="kAnzTage" style="position: absolute; right: 8.5em; transform: translate(0, 25%);">Anzahl der Tage</label>
+									<div class="kCostumNumberInputDiv">
+										<input class="kCostumNumberButton" type="button" value="-">
+										<input class="kCostumNumberInput" value="1"  min="1" max="15" id="kAnzTage" type="number" onchange="berechneKosten()">
+										<input class="kCostumNumberButton" type="button" value="+">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="margin-top: 1em;">
+									<p class="kUberschrift">Zubehör</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout">
+									<table style="text-align: left;">
+										<tr>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kStaubox">
+												<label for="kStaubox">Staubox</label>
+											</td>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kLenkradgurt">
+												<label for="kLenkradgurt">Lenkradgurt</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kHinterradbefestigung">
+												<label for="kHinterradbefestigung">Hinterradbefestigung</label>
+											</td>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kFass">
+												<label for="kFass">Wasserdichtes Fass</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kFahrradtrager2">
+												<label for="kFahrradtrager2">Fahrradträger 2er</label>
+											</td>
+											<td>
+												<input class="kCheckbox" type="checkbox" id="kFahrradtrager4">
+												<label for="kFahrradtrager4">Fahrradträger 4er</label>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<div class="kVerticalLayout" style="margin-top: 1em;">
+									<p class="kUberschrift">Versicherung und Mietkonditionen</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout">
+									<input class="kCheckbox" type="checkbox" id="kTransportversicherung">
+									<label for="kTransportversicherung">Transportversicherung</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="margin-top: 0.5em;">
+									<a class="kUberschrift" href="">Mietbedingungen und Konditionen</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="height: 1em; margin-top: 1em; width: 50%;">
+									<p class="kAuswahl" id="rueckgabe">vorraussichtl. Preis:</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="kVerticalLayout" style="height: 1em; margin-bottom: 2em; width: 50%;"> 
+									<p class="kAuswahl" id="kKaution">vorraussichtl. Kaution:</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<input type="button" id="kFormButton" value="Zum Kontaktformular">
 			</div>
 		</div>
 		<div id="kontakt" class="blau">
@@ -1208,3 +1261,8 @@
 		</div>
 		</body>
 </html>
+
+
+
+
+
