@@ -16,6 +16,7 @@ body {
   font-family: 'Archivo';
   height: auto;
   margin: 0;
+  border: 2px solid red;
 }
 @media only screen and (max-width: 800px) {
   body {
