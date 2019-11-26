@@ -10,7 +10,7 @@ html{
   border: 2px solid red;
 }
 body {
-  width: 100%;
+  width: 100vw;
   scroll-behavior: smooth;
   font-family: 'Archivo';
   margin: 0;
@@ -65,7 +65,7 @@ body {
 /* Welcome */
 #welcome {
   height: auto;
-  width: 100%;
+  width: 100vw;
   padding-top: 6rem;
   text-align: center;
   position: relative;
