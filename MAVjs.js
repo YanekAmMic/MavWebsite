@@ -89,9 +89,6 @@ function berechneKosten(){
         rueckgabe.innerHTML = "Fehler!";
     }
 
-
-
-
 }
 
 class anhanger{
@@ -115,7 +112,7 @@ class anhanger{
         }
     }
 
-none = new anhanger(1, 1, "bilder/Logo.png");
+none = new anhanger(1, 1, "bilder/Logo2.png");
 mv16 = new anhanger(1, 1, "bilder/MV 16.jpg");
 mv26 = new anhanger(1, 2, "bilder/MV 26.jpg");
 mv40 = new anhanger(2, 4, "bilder/MV 40.jpg");
@@ -183,15 +180,185 @@ function setAnhanger(){
 
  }
 
- function buttonFunction(add, input){
+function closeModal(){
 
-    number = document.getElementById(input).value;
+    var modalBox = document.getElementById("modalBox");
+    var modalLock = document.getElementById("modalLock");
 
-    if(add == true){
-        number = number + 1;
-    }else{
-        number = number - 1;
+    var miet = document.getElementById("modalMietbedingungen")
+    var schutz = document.getElementById("modalDatenschutz")
+    var imp = document.getElementById("modalImpress")
+
+    var head = document.getElementById("modalHeader");
+
+    modalBox.style.display = "none";
+    modalLock.style.display = "none";
+
+    head.innerHTML == "";
+
+    miet.style.display = "none";
+    schutz.style.display = "none";
+    imp.style.display = "none";
+
+}
+
+function openModalBox(a){
+
+    var lock = document.getElementById("modalLock");
+    var box = document.getElementById("modalBox");
+    var head = document.getElementById("modalHeader");
+
+    box.style.display = "block";
+    lock.style.display ="block";
+
+    var miet = document.getElementById("modalMietbedingungen")
+    var schutz = document.getElementById("modalDatenschutz")
+    var imp = document.getElementById("modalImpress")
+
+    switch (a){
+
+        case "miet":
+            head.innerHTML = "Mietbedingungen";
+            miet.style.display = "block";
+            break;
+          
+        case "schutz":
+            head.innerHTML = "Datenschutzerklärung";
+            schutz.style.display = "block";
+            break;
+
+        case "imp":
+            head.innerHTML = "Impressum";
+            imp.style.display = "block";
+            break;
+    
+        
     }
-
  }
 
+window.onload = function () { 
+
+    var modalLock = document.getElementById("modalLock");
+    var modalButton = document.getElementById("modalButton");
+
+    window.onclick = function(event) {
+        if (event.target == modalLock) {
+        closeModal()
+        }
+    } 
+
+    modalButton.onclick = function() {
+        closeModal()
+    }
+  
+};
+
+var slideIndex = 2;
+var slides = document.getElementsByClassName("sItem");
+var navBtns = document.getElementsByClassName("sSelector");
+showSlides(slideIndex);
+
+function plusSlides(n) {
+
+    if(n > 0){
+        slides[slideIndex-1].style.animation = "fadeoutMidToLeft 0.5s";
+    } else {
+        slides[slideIndex-1].style.animation = "fadeoutMidToRight 0.5s";
+    }
+
+    setTimeout(function(){
+        showSlides(slideIndex += n); 
+        if(n > 0){
+            slides[slideIndex-1].style.animation = "fadeinRightToMid 0.5s";    
+          }else{
+            slides[slideIndex-1].style.animation = "fadeinLeftToMid 0.5s";    
+          }
+    
+    }, 500);
+  
+}
+
+function currentSlide(n) {
+
+    if(n == slideIndex){
+
+    }else{
+
+        if(n > slideIndex){
+            slides[slideIndex-1].style.animation = "fadeoutMidToLeft 0.5s";
+        } else {
+            slides[slideIndex-1].style.animation = "fadeoutMidToRight 0.5s";
+        }
+    
+        setTimeout(function(){
+            showSlides(slideIndex = n);
+            if(n > slideIndex){
+                slides[slideIndex-1].style.animation = "fadeinLeftToMid 0.5s";    
+              }else{ 
+                slides[slideIndex-1].style.animation = "fadeinRightToMid 0.5s";   
+              }
+        
+        }, 500);
+
+    }
+
+}
+
+function showSlides(n) {
+  var i;
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < navBtns.length; i++) {
+    navBtns[i].className = navBtns[i].className.replace(" sSelectorSelected", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  navBtns[slideIndex-1].className += " sSelectorSelected";
+
+} 
+
+var folded = false;
+
+
+function foldOutAnhanger(){
+
+    rechner = document.getElementById("kFormDiv");
+    anhanger = document.getElementById("kImgDiv");
+    btn = document.getElementById("kAnhangerButton");
+    btn.setAttribute("disabled", "disabled");
+
+
+    if(folded == true){
+
+    anhanger.style.animation = "foldin 1s";
+    btn.style.transform = "rotate(0deg)";
+    btn.style.transition = "transform 1s";
+
+    setTimeout(function(){
+        rechner.style.transform = "translate(0, -50%)";
+        rechner.style.transition = "transform 1s";
+        anhanger.style.display = "none";
+        btn.removeAttribute("disabled");
+    }, 500);
+
+    folded = false;
+
+    } else{
+
+    btn.style.transform = "rotate(180deg)";
+    btn.style.transition = "transform 1s";
+    rechner.style.transform = "translate(50%, -50%)";
+    rechner.style.transition = "transform 1s";
+
+    setTimeout(function(){
+        anhanger.style.animation = "foldout 1s";
+        anhanger.style.display = "block";
+        btn.removeAttribute("disabled");
+    }, 500);
+
+    folded = true;
+
+    }
+}

@@ -8,10 +8,139 @@
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 		<link rel="stylesheet" type="text/css" href="MAVcss.css">
 		<link rel="icon" href="bilder/icon.png">
-		<script type="text/javascript" src="MAVjs.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="MAVjs.js"></script>
 	</head>
 	<body>
+		<div id="modalLock">
+			<div id="modalBox">
+					<p id="modalHeader" style="display: inline-block">Test</p>
+					<input type="button" value="&times;" id="modalButton">
+					<div id="modalMietbedingungen">
+						<ul>
+							<li>
+								Der Inhalt der Notfallbox wird von dem Vermieter dem Mieter kostenlos zur Verfügung gestellt
+								Die Benutzung des Anhängers geschieht auf eigenes Risiko. Der Vermieter haftet
+								nur für die von ihm abgeschlossenen Versicherungsleistungen und nicht darüber hinaus. 
+							</li>
+							<li>
+								Eine KFZ- Haftpficht mit Teilkasko Versicherung für den Anhänger ist in der Miete eingeschlossen.
+								Für eine Versicherung der zu transportierenden Gegenstände auf den Anhängern ist der Mieter selbst zuständig.
+							</li>
+							<li>
+								Für Beschädigungen, an den zu transportierenden Gegenständen, haftet allein der Mieter.
+							</li>
+							<li>
+								Bei Beschädigungen/Unfall ist der Vermieter sofort zu informieren.  Sollte keine Information erfolgen,
+								können Folgekosten entstehen, die der Mieter tragen muss. 
+							</li>
+							<li>
+								Bei Beschädigungen am Anhänger oder am Inhalt der Notfallbox haftet der Mieter. Die daraus entstehenden Reparaturkosten und
+								die Ersatzteilkosten gehen zu Lasten des Mieters. 
+							</li>
+							<li>
+								Will der Mieter die Mietdauer verlängern, so hat er dies dem Vermieter frühzeitig mitzuteilen.
+								Die Verlängerung ist nur möglich, wenn das Mietobjekt nicht von jemand anderem reserviert ist.
+								Sollte der Anhänger nicht zum Rückgabedatum zurückgebracht werden, ist für jeden weiteren						
+								Kalendertag ein Betrag von 50,- € fällig. Eventuelle Zusatzkosten  die durch den Nachmieter entstehen, trägt der Mieter. 
+							</li>
+							<li>
+								Nach Ablauf der Miete ist das Mietobjekt in gereinigtem und technisch einwandfreiem Zustand dem
+								Vermieter zurückzugeben. Andernfalls wird für die Reinigung mind. 25,00 € berechnet. 
+							</li>
+							<li>
+								Wird der Mietgegenstand vom Mieter vorzeitig zurückgegeben, kann daraus keine Mietminderung abgeleitet werden.
+							</li>
+							<li>
+								Der Inhalt der Notfallbox wird kostenlos zur Verfügung gestellt. Vor jedem Verzurren sind die Gurte auf
+								Schäden zu überprüfen und ggf. auszutauschen. Unmittelbar nach Fahrtantritt sind die Gurte zu kontrollieren,
+								da sich die Gurte setzen. Während der Fahrt sind die Verzurrungen mehrmals zu überprüfen. 
+							</li>
+							<li>
+								Falls der Schlüsselsatz, der Ersatzschlüsselbund oder ein Schloss verloren geht, ist ein Betrag von 30,- € fällig.
+							</li>
+							<li>
+								Sollte unter Umständen der Vermieter die Verzurrung  der Motorräder vornehmen,
+								können für diesen Service Kosten für den Mieter entstehen. Die Verzurrung ist - ohne Gewähr - . 
+							</li>
+							<li>
+								Gibt der Mieter bei seiner Buchung nicht Hersteller und Typ des Motorrades an, kann es sein, dass der Anhänger
+								für diese Motorräder nicht geeignet ist. Folgekosten können dem Vermieter nicht in Rechnung gestellt werden. 
+							</li>
+							<li>
+								Für 100km/h: entscheidend ist das Leergewicht des Zugfahrzeugs
+								Beim Gesamtgewicht des Anhängers von   1300 kg/ 1500 kg/ 1600 kg/ 1800 kg darf					
+								das Leergewicht des Zugfahrzeuges mind. 1185 kg/ 1365 kg/ 1455 kg/ 1636 kg betragen. 
+							</li>
+							<li>
+								Wenn ein Radwechsel durchgeführt wird, erlischt die 100 km/h - Genehmigung des Anhängers.
+							</li>
+							<li>
+								Sollte eine Strafverfügung/Geschwindigkeitsüberschreitung erfolgen, werden die erforderlichen Daten an das jeweilige Amt
+								ohne Rücksprache weitergeleitet. 
+							</li>
+							<li>
+								Haftungsausschluss: Die Spanngurte, Ratschen und Hinterradbefestigungen, die sich in der Notfallbox befinden,
+								sind nicht nach EN12195-2 gefertigt und getestet worden. Sollte der Mieter die Spanngurte, Ratschen und Hinterrad-							 
+								befestigungen benutzen, geschieht dieses auf eigene Gefahr. Für Schäden und Verletzungen an den zu							 
+								transportierenden Gegenständen und Personen ist der Motorradanhängerverleih Bielefeld nicht haftbar. 
+							</li>
+						</ul>
+						Die Miete und die Kaution ist bei der Abholung zu zahlen.
+						Der Fahrzeugschein, die Infomappe und die Schlüssel werden bei Abholung übergeben. 
+						<br>
+						<br>
+						Als Mieter bestätige ich, den Anhänger in einem verkehrstauglichen und in einem ordnungsgemäßen
+						Zustand erhalten zu haben. Eine Einweisung in die Nutzung des Anhängers, in die Verzurrung des Motorrades und				
+						Infomappe habe ich erhalten, die vor der Beladung zu lesen ist.		   
+						Die o.g. und umseitig deklarierten Geschäftsbedingungen sind Bestandteile dieses Vertrages.					   
+						Ich habe die Bedingungen gelesen und erkenne diese an. 
+					</div>
+					<div style="display: none;" id="modalDatenschutz">
+							<strong>Urheberrecht</strong><br>
+							Die Veröffentlichungen auf diesen Seiten unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung von Stefan Mechsner.<br>
+							<br>
+							<strong>Copyright</strong><br>
+							Das Copyright an Musik, Bildern, Texten sowie dem Design und den Grafikelementen auf dieser Website liegt ausschließlich bei dem Betreiber dieser Website. Jede nicht authorisierte Verwendung - egal ob kommerziell oder nicht kommerziell - ist untersagt und kann und wird gegebenenfalls rechtlich verfolgt.<br>
+							<br>
+							In diesem Zusammenhang bin ich für alle Hinweise über unrechtmäßig genutztes Material dankbar.
+							<br>
+							<br>
+							<strong>Haftung für Inhalte</strong><br>
+							Die Informationen auf dieser Seite sind allgemeiner und informativer Art. Die Inhalte dieser Seiten werden mit größter Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität dieser Inhalte kann jedoch keine Haftung übernommen werden.<br>
+							<br>
+							<strong>Haftung für Links</strong><br>
+							Die aufgeführten externen Links führen zu Inhalten fremder Anbieter. Für diese Inhalte ist der jeweilige Anbieter verantwortlich.<br>
+							<br>	
+					</div>
+					<div style="display: none;" id="modalImpress">
+							Verantwortlich nach § 6 Abs.2 MDStV und Inhaber der Domain www. mav.de.to .de ist:<br>
+							<br>
+							Stefan Mechsner<br>
+							<br>
+							Stargarderstr, 28<br>
+							<br>
+							33699 Bielefeld<br>
+							<br>
+							Tele: 0176 / 56233264<br>
+							<br>
+							http://mav.de.to<br>
+							<br>
+							email: mav-bielefeld@gmx.de<br>
+							<br>
+							Geschäftsführer: Stefan Mechsner und Horst Vilmar GbR<br>
+							<br>
+							<br>
+							<strong>Besonderheiten bei Kleinunternehmern</strong><br>
+							Alle angegebenen Preise sind Endpreise zzgl. Liefer-/Versandkosten. Aufgrund des Kleinunternehmerstatus gem. § 19 UStG erheben wir keine Umsatzsteuer und weisen diese daher auch nicht aus.<br>
+							<br>
+							<br>
+							<strong>Keine Abmahnung ohne vorherigen Kontakt!</strong><br>
+							Sollte irgendwelcher Inhalt oder die designtechnische Gestaltung einzelner Seiten oder Teile dieses Internetauftritts Rechte Dritter oder gesetzliche Bestimmungen verletzen oder anderweitig in irgendeiner Form wettbewerbsrechtliche Probleme hervorbringen, so bitte ich um eine angemessene, ausreichend erläuternde und schnelle Nachricht ohne Kostennote. Ich garantiere, dass die zu Recht beanstandeten Passagen oder Teile des Onlineangebotes unverzüglich entfernt bzw. den rechtlichen Vorgaben umfänglich angepasst werden, ohne dass von Ihrer Seite die Einschaltung eines Rechtsbeistandes erforderlich ist.<br>        
+							<br>
+					</div>
+			</div>
+		</div>
 		<div id="header" class="weiss">
 			<a id="h1" href="#">MAV - Motorrad Anhänger Verleih Bielefeld</a>
 			<div id="btns">
@@ -23,1046 +152,1008 @@
 			</div>
 		</div>
 		<div id="welcome" class="blau">
-			<h2><span id="h2Wel">Willkommen bei MAV-Bielefeld!</span>
-				<br>
-				<br>
-				<br>
-				Wir sind der Motorrad Anhänger Verleih in Bielefeld!
-				<br>
-				Wir bieten Ihnen verschiedene Anhänger passend für Ihre Bedürfnisse zum Vermieten an. 
-			</h2>
-			<img id="Logo" src="bilder/Logo.png">
+			<h2 class="headline">Willkommen bei MAV-Bielefeld!</h2>
+			<p class="caption">Wir sind der Motorrad Anhänger Verleih in Bielefeld! <br> Wir bieten Ihnen verschiedene Anhänger passend für Ihre Bedürfnisse zum Vermieten an.</p> 
+			<img class="wLogo" src="bilder/Logo eingefahren.png">
+			<img id="wTruck" src="bilder/Truck.png">
 		</div>
 		<div id="angebot" class="weiß">
-			<h3>Unser Angebot</h3>
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 16 absenkbar</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							1
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							950 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							350 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1280 mm x 2510 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,00 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Ja, bis zu 2 Fahrräder
-							</td>
-						</tr>						
-					</table>
-					<p class="itemParagraph">Die Ladefläche lässt sich sehr leicht absenken, wodurch <br> der Anhänger einfach zu beladen ist.</p>
-				</div>
-				<img class= "img" src="bilder/MV 16.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 26 absenkbar</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							2
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							420 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							880 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1530 mm x 2510 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,20 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Nein
-							</td>
-						</tr>						
-					</table>
-					<p class="itemParagraph">Die Ladefläche lässt sich sehr leicht absenken, wodurch <br> der Anhänger einfach zu beladen ist.</p>
-				</div>
-				<img class= "img" src="bilder/MV 26.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 40</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							4
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1600 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							450 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							1150 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1455 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 4070 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,30 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Auf Anfrage
-							</td>
-						</tr>													
-					</table>
-				</div>
-				<img class= "img" src="bilder/MV 40.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 41</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							4
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1600 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							450 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							1150 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1455 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 4070 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,30 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Auf Anfrage
-							</td>
-						</tr>										
+			<h3 class="headline">Unser Angebot</h3>
+			<div id="sDiv">
+				<input class="sNavButton" id="sPrev" type="button" value="&#8249;" onclick="plusSlides(-1)">
+				<input class="sNavButton" id="sNext" type="button" value="&#8250;" onclick="plusSlides(1)" style="transform: translate(300%, -50%);">
+				<div class="sItem" style="display: block;">
+					<img class="sImg" src="bilder/MV 16.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 16</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									1
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									1185 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									950 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									350 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,28 m x 2,51 m 
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,00 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Ja, 2-fach!
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+									Leichte Beladung durch absenkbare Ladefläche!
+								</td>
+							</tr>
 						</table>
-				</div>
-				<img class= "img" src="bilder/MV 41.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 42</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							6
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1800 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							500 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							1300kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1636 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1900 mm x 4400 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,40 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Auf Anfrage
-							</td>
-						</tr>										
-						</table>
-				</div>
-				<img class= "img" src="bilder/MV 42.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 62</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							3
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							400 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							900 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 3000 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							1,80 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Ja, bis zu 2 Fahrräder
-							</td>
-						</tr>										
-						</table>
-				</div>
-				<img class= "img" src="bilder/MV 62.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 63</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							3
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							400 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							900 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 3000 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							1,80 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Ja, bis zu 2 Fahrräder
-							</td>
-						</tr>										
-						</table>						
-				</div>
-				<img class= "img" src="bilder/MV 63.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 64</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							3
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							350 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							950 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 3000 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							1,80 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Nein
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Nein
-							</td>
-						</tr>										
-						</table>
-				</div>
-				<img class= "img" src="bilder/MV 64.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 65</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							3
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							350 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							950 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 3000 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							1,80 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Nein
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Nein
-							</td>
-						</tr>										
-						</table>
-				</div>
-				<img class= "img" src="bilder/MV 65.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div id="MV16" class="blau, item">
-				<div class="aTextbox">
-					<p class="aTitle" >MV 68</p>
-					<table class="aTable">
-						<tr>
-							<td>
-							Motorräder:
-							</td>
-							<td>
-							3
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Geschwindigkeit:
-							</td>
-							<td>
-							100 km/h
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Gesamtgewicht:
-							</td>
-							<td>
-							1300 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht:
-							</td>
-							<td>
-							400 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Zuladung:
-							</td>
-							<td>
-							900 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Leergewicht des Zugfahrzeugs:
-							</td>
-							<td>
-							1185 kg
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Plattformmaß:
-							</td>
-							<td>
-							1800 mm x 3000 mm
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Anhängerbreite:
-							</td>
-							<td>
-							2,00 m
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Auflaufbremse mit Rückfahrautomatik:
-							</td>
-							<td>
-							Ja
-							</td>
-						</tr>
-						<tr>
-							<td>
-							Montierbarer Fahrradträger:
-							</td>
-							<td>
-							Ja, bis zu 2 Fahrräder
-							</td>
-						</tr>										
-						</table>
-				</div>
-				<img class= "img" src="bilder/MV 68.jpg">
-			</div>
-			<input type="button" class="iBtn" value="Jetzt Anfragen">
-			<div class="blau" id="equipment">
-				<p class="aTitle" >Equipment</p>
-				<div>
-					<img class="eImg" src="bilder/Notfallbox.jpg">
-					<div class="eNotfallbox">
-						<p><span style="font-size: 1vw" >Notfallbox</span></p>
-						<p>In unserer Notfallbox findet Ihr alles was Ihr benötigt: 
-						<br>Unterlegkeile, Ersatzgurte, Ratsche, Ersatzglühlampen,<br>
-							Wagenheber, Warnweste, Einweghandschuhe und Werkzeug. 
-						<br>
-							Diese Notfallbox ist bei jedem Anhänger verbaut.
-						<br>
-						<br></p>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
 					</div>
 				</div>
-				<div>
-					<div class="eZuggurte">
-						<p><span style="font-size: 1vw">Zuggurte</span></p>
-						<p>Für die bestmögliche Verzurrung <br> stellen wir Euch Spanngurte bereit. 
-						<br>
-							Unsere Zuggurte entsprechen <br> der DIN EN 12195-2. Sie werden regelmäßig überprüft.</p>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 26.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 26</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									2
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									420 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									880 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,53 m x 2,51 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,20 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Nein
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+									Leichte Beladung durch absenkbare Ladefläche!
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
 					</div>
-					<img class="eImg" src="bilder/Spanngurte.jpg">
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 40.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 40</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									4
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1600 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									450 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									1150 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1455 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 4,07 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,30 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Auf Anfrage
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 41.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 41</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									4
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1600 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									450 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									1150 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1455 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 4,07 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,30 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Auf Anfrage
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 42.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 42</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									6
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1800 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									500 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1636 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,90 m x 4,40 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,40 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Auf Anfrage
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 62.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 62</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									3
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									400 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									900 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 3,00 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									1,80 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Ja, 2-fach!
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 63.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 63</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									3
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									400 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									900 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 3,00 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									1,80 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Ja, 2-fach!
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 64.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 64</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									3
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									350 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									950 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 3,00 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									1,80 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Nein
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Nein
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 65.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 65</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									3
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									350 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									950 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 3,00 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									1,80 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Nein
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Nein
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sItem">
+					<img class="sImg" src="bilder/MV 68.jpg">
+					<div class="sText">
+						<p class="sTitle">MV 68</p>			
+						<table class="sTable">
+							<tr>
+								<td class="sTableLabel">
+									Motorräder: 
+								</td>
+								<td>
+									3
+								</td>
+								<td class="sTableLabel">
+									Geschwindigkeit:
+								</td>
+								<td>
+									100 km/h
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Gesamtgewicht: 
+								</td>
+								<td>
+									1300 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht: 
+								</td>
+								<td>
+									400 kg
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Zuladung:
+								</td>
+								<td>
+									900 kg
+								</td>
+								<td class="sTableLabel">
+									Leergewicht Zugfahrzeug: 
+								</td>
+								<td>
+									1185 kg 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Plattformmaß: 
+								</td>
+								<td>
+									1,80 m x 3,00 m
+								</td>
+								<td class="sTableLabel">
+									Anhängerbreite: 
+								</td>
+								<td>
+									2,00 m 
+								</td>
+							</tr>
+							<tr>
+								<td class="sTableLabel">
+									Auflaufbremse mit Rückfahrautomatik:
+								</td>
+								<td>
+									Ja 
+								</td>
+								<td class="sTableLabel">
+									Montierbarer Fahrradträger:
+								</td>
+								<td>
+									Ja, 2-fach!
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="text-align: center; padding-top: 1em;">
+								</td>
+							</tr>
+						</table>
+						<input class="sButton" type="button" value="Jetzt Anfragen">
+					</div>
+				</div>
+				<div class="sNav">
+					<table style="width: 100%; height: 100%;">
+						<tr>
+							<td onclick="currentSlide(1)" class="sSelector sSelectorSelected"></td>
+							<td onclick="currentSlide(2)" class="sSelector"></td>
+							<td onclick="currentSlide(3)" class="sSelector"></td>
+							<td onclick="currentSlide(4)" class="sSelector"></td>
+							<td onclick="currentSlide(5)" class="sSelector"></td>
+							<td onclick="currentSlide(6)" class="sSelector"></td>
+							<td onclick="currentSlide(7)" class="sSelector"></td>
+							<td onclick="currentSlide(8)" class="sSelector"></td>
+							<td onclick="currentSlide(9)" class="sSelector"></td>
+							<td onclick="currentSlide(10)" class="sSelector"></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
 		<div id="zubehoer" class="blau">
-			<div id="zItem"> 
-				<h4>Zubehör</h4>
-				<table id="zTable">
-					<tr>
-						<td>
-							<p class="zHead">Spangurte</p>
-						</td>
-						<td>
-							<p class="zHead">Container</p>
-						</td>
-						<td>
-							<p class="zHead">Fahrradträger</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="ausstattung">
-								<p>Lenkradgurt</p>
-								<img class="zImg" src="bilder/Lenkradgurt.jpg">
-								<p>Unsere Lenkradgurte dienen zur zusätzlichen Stbilität des Motorrades.
-								<br>
-								<br>
-								Sie sind keine Haupfbefestigung und können kostenlos dazu gebucht werden.</p>
-							</div>
-						</td>
-						<td>
-							<div class="ausstattung">
-								<p>Staubox</p>
-								<img class="zImg" src="bilder/Staubox.jpg">
-								<p>In der Staubox ist es möglich die Motorradbekleidung zu lagern und vor Spritzwasser zu schützen.
-								Diese bieten wir nur für unsere Anhänger MV 40, MV 41 und MV 42 an.
-								<br>
-								<br>
-								Die Staubox ist aus Kunststoff und hat die Maße von:
-								<br>B 40cm, H 50cm L 113cm.</p>
-							</div>
-						</td>
-						<td>
-							<div class="ausstattung">
-								<p>Fahrradträger 2x</p>
-								<img class="zImg" src="bilder/Fahrradträger 2.jpg">
-								<p>Für die kleineren Ausflüge zwischendurch, bieten wir Euch Fahrradträger zum leihen an.
-								<br>Um im Urlaub flexibel zwischen den Bikes zu tauschen, sind die Fahrradträger perfekt.
-								<br>
-								<br>
-								Hier im Bild ist ein Fahrradträger für 2 Fahrräder, geeignet für Anhänger und Auto.
-								</p>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="ausstattung">
-								<p>Hinterradbefestigung</p>
-								<img class="zImg" src="bilder/Hinterradbefestigung.jpg" >
-								<p>Wenn keine Befestigung am Rahmen möglich ist, kommt unsere Hinterradbefestigung zum Einsatz.
-								<br>
-								<br>
-								Die Hinterradbefestigung entspricht nicht der EN 12195. Die Befestigung ist kostenlos buchbar.</p>
-							</div>
-						</td>
-						<td>
-							<div class="ausstattung">
-								<p>Wasserdichtes Fass</p>
-								<img class="zImg" src="bilder/Fass.jpg">
-								<p>Falls es dann doch in ein starkes Regengebiet geht, bieten wir dieses Fass für unsere Anhänger an.
-								<br>
-								<br>
-								Das Fass ist aus Kunststoff und Wasserdicht</p>
-							</div>
-						</td>
-							<td>
-							<div class="ausstattung">
-								<p>Fahrradträger 4x</p>
-								<img class="zImg" src="bilder/Fahrradträger 4.jpg">
-								<p>Wir bieten auch einen Fahrradträgerfür 4 Fahrräder an.
-								<br>Perfekt für kleinere Gruppen oder Fahrradgruppen.
-								<br>Der Fahrradträger ist nur für das Auto geeignet.</p>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</div>
+			<h4>Zubehör</h4>
+			<table id="zTable">
+				<tr>
+					<td>
+						<p class="zHead">Spangurte</p>
+					</td>
+					<td>
+						<p class="zHead">Container</p>
+					</td>
+					<td>
+						<p class="zHead">Fahrradträger</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Lenkradgurt</p>
+							<img class="zImg" src="bilder/Lenkradgurt.jpg">
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Lenkradgurt</p>
+							<p>Unsere Lenkradgurte dienen zur zusätzlichen Stbilität des Motorrades.</p>
+							<p>Sie sind keine Haupfbefestigung und können kostenlos dazu gebucht werden.</p>
+						</div>
+					</td>
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Staubox</p>
+							<img class="zImg" src="bilder/Staubox.jpg">
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Staubox</p>
+							<p>In der Kunstoff-Staubox ist es möglich die Motorradbekleidung zu lagern.</p>
+							<p>Diese bieten wir nur für unsere Anhänger MV 40, MV 41 und MV 42 an.</p>
+							<p>Maße: <br> B 40cm, H 50cm L 113cm.</p>
+						</div>
+					</td>
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Fahrradträger 2x</p>
+							<img class="zImg" src="bilder/Fahrradträger 2.jpg">
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Fahrradträger 2x</p>
+							<p>Um im Urlaub flexibel zwischen den Bikes zu tauschen, sind die Fahrradträger perfekt.</p>
+							<p>Dieser Fahrradträger ist für 2 Fahrräder geeignet und lässt sich auf Anhänger und Autos montieren.</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Hinterradbefestigung</p>
+							<img class="zImg" src="bilder/Hinterradbefestigung.jpg" >
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Hinterradbefestigung</p>
+							<p>Wenn keine Befestigung am Rahmen möglich ist, kommt unsere Hinterradbefestigung zum Einsatz.</p>
+							<p>Die Hinterradbefestigung entspricht nicht der EN 12195. Die Befestigung ist kostenlos buchbar.</p>
+						</div>
+					</td>
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Wasserdichtes Fass</p>
+							<img class="zImg" src="bilder/Fass.jpg">
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Wasserdichtes Fass</p>
+							<p>Falls es dann doch in ein starkes Regengebiet geht, bieten wir dieses Fass für unsere Anhänger an.</p>
+							<p>Das Fass ist aus Kunststoff und Wasserdicht</p>
+						</div>
+					</td >
+					<td class="zAusstattungCell">
+						<div class="zAusstattung">
+							<p class="zAusstattungTitle">Fahrradträger 4x</p>
+							<img class="zImg" src="bilder/Fahrradträger 4.jpg">
+						</div>
+						<div class="zAusstattungCover">
+							<p class="zAusstattungTitle">Fahrradträger 4x</p>
+							<p>Perfekt für kleinere Gruppen oder Fahrradgruppen geeignet.</p>
+							<p>Der Fahrradträger lässt sich nur auf Autos montieren.</p>	
+						</div>
+					</td>
+				</tr>
+			</table>
+			<h5 class="headline">Equipment</h5>
+			<p class="caption">Unser Equipment bekommen Sie kostenlos bei jeder Vermietung zur Verfügung gestellt.</p>
+			<table id="zTable" style="margin-top: 10rem;">
+				<tr>
+					<td class="zEquipmentCell">
+						<div class="zEquipment">
+							<p class="zEquipmentTitle">Zuggurte</p>
+							<img class="zEquipmentImage" src="bilder/Notfallbox.jpg">
+						</div>
+						<div class="zEquipmentCover zEquipmentCoverRight">
+							<p class="zEquipmentTitle">Zuggurte</p>
+							<p>Für die bestmögliche Verzurrung stellen wir Euch Spanngurte bereit.</p>
+							<p>Unsere Zuggurte entsprechen der DIN EN 12195-2.</p>
+							<p>Sie werden regelmäßig überprüft.</p>
+						</div>
+					</td>
+					<td class="zEquipmentCell">
+						<div class="zEquipment">
+							<p class="zEquipmentTitle">Notfallbox</p>
+							<img class="zEquipmentImage" src="bilder/Spanngurte.jpg">
+						</div>
+						<div class="zEquipmentCover zEquipmentCoverLeft">
+							<p class="zEquipmentTitle">Notfallbox</p>
+							<p>In unserer Notfallbox findet Ihr alles was Ihr benötigt: <br>
+								Unterlegkeile, Ersatzgurte, Ratsche, Ersatzglühlampen,<br>
+								Wagenheber, Warnweste, Einweghandschuhe und Werkzeug. </p>
+							<p>Diese Notfallbox ist bei jedem Anhänger verbaut.</p>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div id="preise" class="weiß">
 			<div id="rechner" class="blau">
-				<p id="kTitle">Kostenvoransicht</p>
-				<img id="kImage" class="kImg" src="bilder/MV 16.jpg">
-				<form class="kFormDiv" autocomplete="off">
+				<div id="kImgDiv">
+					<img id="kImage" class="kImg" src="bilder/MV 16.jpg">
+					<select class="kAuswahl" id="kAnhangerWahl" onchange="setAnhanger()" style="width: 100%; padding: 0.4em 0.5em;">
+						<option value="default" selected>Anhänger</option>
+						<option value="mv16">MV16 absenkbar</option>
+						<option value="mv26">MV26 absenkbar</option>
+						<option value="mv40">MV40</option>
+						<option value="mv41">MV41</option>
+						<option value="mv42">MV42</option>
+						<option value="mv62">MV62</option>
+						<option value="mv63">MV63</option>
+						<option value="mv64">MV64</option>
+						<option value="mv65">MV65</option>
+						<option value="mv68">MV68</option>
+					</select>
+				</div>
+				<form id="kFormDiv" autocomplete="off">
+					<p id="kTitle">Kostenvoransicht</p>
+					<div id="kAnhangerButtonDiv">
+						<button id="kAnhangerButton" onclick="foldOutAnhanger(); return false;"><span>&#8249;</span></button>
+					</div>
 					<table style="width: 100%; text-align: center;">
-						<tr>
-							<td>
-								<div class="kVerticalLayout" style="margin-top: 1em; width: 80%; border-radius: 2em; overflow: hidden;">
-									<select class="kAuswahl" id="kAnhangerWahl" onchange="setAnhanger()" style="width: 100%; padding: 0.4em 0.5em;">
-										<option value="default" selected>Anhänger</option>
-										<option value="mv16">MV16 absenkbar</option>
-										<option value="mv26">MV26 absenkbar</option>
-										<option value="mv40">MV40</option>
-										<option value="mv41">MV41</option>
-										<option value="mv42">MV42</option>
-										<option value="mv62">MV62</option>
-										<option value="mv63">MV63</option>
-										<option value="mv64">MV64</option>
-										<option value="mv65">MV65</option>
-										<option value="mv68">MV68</option>
-									</select>
-								</div>
-							</td>
-						</tr>
 						<tr>
 							<td>
 								<div class="kVerticalLayout" style="width: 80%;">
@@ -1169,8 +1260,8 @@
 							</td>
 						</tr>
 					</table>
+					<input type="button" id="kFormButton" value="Zum Kontaktformular">
 				</form>
-				<input type="button" id="kFormButton" value="Zum Kontaktformular">
 			</div>
 		</div>
 		<div id="kontakt" class="blau">
@@ -1253,13 +1344,13 @@
 					<figcaption>Motorrad Anhänger Verleih Bielefeld</figcaption>
 				</div>
 				<div id="footerLinks">
-					<a class="footerLink" href="">Mietbedingungen</a>
-					<a class="footerLink" href="">Datenschutz</a>
-					<a class="footerLink" href="">Impressum</a>	
+					<a class="footerLink" onclick="openModalBox('miet')">Mietbedingungen</a>
+					<a class="footerLink" onclick="openModalBox('schutz')">Datenschutz</a>
+					<a class="footerLink" onclick="openModalBox('imp')">Impressum</a>	
 				</div>		
 			</div>
 		</div>
-		</body>
+	</body>
 </html>
 
 
