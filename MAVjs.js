@@ -261,17 +261,17 @@ showSlides(slideIndex);
 function plusSlides(n) {
 
     if(n > 0){
-        slides[slideIndex-1].style.animation = "fadeoutMidToLeft 0.5s";
+        slides[slideIndex-1].style.animation = "fadeoutMidToUp 0.5s";
     } else {
-        slides[slideIndex-1].style.animation = "fadeoutMidToRight 0.5s";
+        slides[slideIndex-1].style.animation = "fadeoutMidToDown 0.5s";
     }
 
     setTimeout(function(){
         showSlides(slideIndex += n); 
         if(n > 0){
-            slides[slideIndex-1].style.animation = "fadeinRightToMid 0.5s";    
+            slides[slideIndex-1].style.animation = "fadeinDownToMid 0.5s";    
           }else{
-            slides[slideIndex-1].style.animation = "fadeinLeftToMid 0.5s";    
+            slides[slideIndex-1].style.animation = "fadeinUpToMid 0.5s";    
           }
     
     }, 500);
@@ -280,26 +280,25 @@ function plusSlides(n) {
 
 function currentSlide(n) {
 
-    if(n == slideIndex){
+    var r = n;
 
-    }else{
+    if(n != slideIndex){
 
         if(n > slideIndex){
-            slides[slideIndex-1].style.animation = "fadeoutMidToLeft 0.5s";
+            slides[slideIndex-1].style.animation = "fadeoutMidToUp 0.5s";
+            setTimeout(function(){
+                showSlides(slideIndex = n);
+                slides[slideIndex-1].style.animation = "fadeinDownToMid 0.5s";   
+              }, 500);
         } else {
-            slides[slideIndex-1].style.animation = "fadeoutMidToRight 0.5s";
+            slides[slideIndex-1].style.animation = "fadeoutMidToDown 0.5s";
+            setTimeout(function(){
+                 showSlides(slideIndex = n);
+                slides[slideIndex-1].style.animation = "fadeinUpToMid 0.5s";   
+              }, 500);
         }
-    
-        setTimeout(function(){
-            showSlides(slideIndex = n);
-            if(n > slideIndex){
-                slides[slideIndex-1].style.animation = "fadeinLeftToMid 0.5s";    
-              }else{ 
-                slides[slideIndex-1].style.animation = "fadeinRightToMid 0.5s";   
-              }
-        
-        }, 500);
 
+        showSlides(slideIndex = n);
     }
 
 }
@@ -337,7 +336,7 @@ function foldOutAnhanger(){
     btn.style.transition = "transform 1s";
 
     setTimeout(function(){
-        rechner.style.transform = "translate(0, -50%)";
+        rechner.style.transform = "translate(-50%, -50%)";
         rechner.style.transition = "transform 1s";
         anhanger.style.display = "none";
         btn.removeAttribute("disabled");
@@ -349,7 +348,7 @@ function foldOutAnhanger(){
 
     btn.style.transform = "rotate(180deg)";
     btn.style.transition = "transform 1s";
-    rechner.style.transform = "translate(50%, -50%)";
+    rechner.style.transform = "translate(0, -50%)";
     rechner.style.transition = "transform 1s";
 
     setTimeout(function(){
@@ -361,4 +360,104 @@ function foldOutAnhanger(){
     folded = true;
 
     }
+}
+
+var smallNavFoldedOut = false;
+
+function foldOutNav(){
+
+    var smallNavBar = document.getElementById("headerSmall");
+    var navBar = document.getElementById("header");
+
+    if(!smallNavFoldedOut){
+
+        smallNavBar.style.display = "block";
+        smallNavBar.style.transition = "transform 1s"
+        smallNavBar.style.transform = "translate(0, 0)";
+        smallNavBar.style.transition = "transform 1s"
+
+        navBar.style.transform = "translate(0,-4rem)";
+        navBar.style.transition = "transform 1s"
+
+        setTimeout(function(){
+            navBar.style.display = "none";
+        }, 1000);
+
+        smallNavFoldedOut = true;
+
+    }else if(smallNavFoldedOut){
+
+        smallNavBar.style.transform = "translate(12rem, 0)";
+
+        navBar.style.display = "block";
+        navBar.style.transition = "transform 1s"
+        navBar.style.transform = "translate(0, 0)";
+        navBar.style.transition = "transform 1s"
+
+        setTimeout(function(){
+            smallNavBar.style.display = "none";
+        }, 1000);
+
+        smallNavFoldedOut = false;
+    }
+}
+
+function increaseValue(mtr){
+
+    var numberInput;
+
+    if(mtr){
+
+        numberInput = document.getElementById("kMtrNumber");
+
+    } else {
+
+        numberInput = document.getElementById("kTageNumber");
+
+    }
+
+    if(numberInput.value < numberInput.max){
+        numberInput.value =+ 1;
+    }
+
+}
+
+function decreaseValue(mtr){
+
+    var numberInput;
+
+    if(mtr){
+
+        numberInput = document.getElementById("kMtrNumber");
+
+    } else {
+
+        numberInput = document.getElementById("kTageNumber");
+
+    }
+
+    if(numberInput.value > numberInput.min){
+        numberInput.value =- 1;
+    }
+
+}
+
+var slideOpen = false;
+
+function toggleSecondSlide(){
+
+    var slideDiv = document.getElementById("sSecondSlide");
+    var addButton = document.getElementById("sAddButton");
+
+    if(!slideOpen){
+        slideDiv.style.display = "block";
+        addButton.value = "-";
+        slideOpen = true;
+    } 
+    else {
+        slideDiv.style.display = "none";
+        addButton.value = "+";
+        slideOpen = false;
+    }
+
 }
